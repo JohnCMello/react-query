@@ -22,7 +22,7 @@ export function useStaff(): UseStaff {
   const [filter, setFilter] = useState('all');
 
   const fallback = [];
-  const { data: staff = fallback } = useQuery(queryKeys.treatments, getStaff, {
+  const { data: staff = fallback } = useQuery(queryKeys.staff, getStaff, {
     retry: false,
   });
 
